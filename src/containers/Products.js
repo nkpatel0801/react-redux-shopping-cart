@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { data } from './../data/products.json';
 import ProductList from '../components/ProductList.js';
 import { Navbar } from 'react-bootstrap';
 import { connect } from 'react-redux';
@@ -25,7 +24,7 @@ class Products extends Component {
                         </Link>
                     </Navbar.Collapse>
                 </Navbar>
-                <ProductList products={data} />
+                <ProductList/>
             </React.Fragment>
         );
     }
